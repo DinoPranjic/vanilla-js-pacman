@@ -35,9 +35,9 @@ class Pacman {
 
   makeMove() {
     const classesToRemove = [OBJECT_TYPE.PACMAN];
-    const classestoAdd = [OBJECT_TYPE.PACMAN];
+    const classesToAdd = [OBJECT_TYPE.PACMAN];
 
-    return { classesToRemove, classestoAdd };
+    return { classesToRemove, classesToAdd };
   }
 
   setNewPos(nextMovePos) {
