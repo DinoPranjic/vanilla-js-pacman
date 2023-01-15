@@ -44,6 +44,9 @@ function startGame() {
   const pacman = new Pacman(2, 287);
 
   gameBoard.addObject(287, [OBJECT_TYPE.PACMAN]);
+  document.addEventListener('keydown', (e) => 
+    pacman.handleKeyInput(e, gameBoard.objectExist)
+  )
 
 }
 
